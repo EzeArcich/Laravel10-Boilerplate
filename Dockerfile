@@ -3,7 +3,7 @@ FROM php:8.2-cli
 WORKDIR /var/www
 
 RUN apt-get update && apt-get install -y \
-    zip unzip git curl libpng-dev \
+    zip unzip git curl libpng-dev \ php-intl \
     && docker-php-ext-install pdo pdo_mysql gd
 
 # Instalar Composer
