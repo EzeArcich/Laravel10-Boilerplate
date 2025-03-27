@@ -9,7 +9,7 @@
 
 ## Indicaciones
 
-Al clonar el repo, desde la raíz del proyecto, usamos el comando "composer install", luego "docker-compose up -d" para levantar los contenedores. Debemos ingresar al contenedor de Laravel, con el comando "docker exec -ti laravel_app bash", una vez dentro, corremos el comando "composer install" para instalar las dependencias, y luego las migraciones con "php artisan migrate". También ejecutamos "php artisan key:generate" y esto ya nos dejará el proyecto corriendo en "http://localhost:8002/". El puerto obviamente se puede cambiar en el archivo docker-compose.yml, antes de levantar los contenedores.
+Al clonar el repo, desde la raíz del proyecto, usamos el comando "composer install", luego "docker-compose up -d" para levantar los contenedores. Debemos ingresar al contenedor de Laravel, con el comando "docker exec -ti laravel_app bash", una vez dentro, corremos el comando "composer install" para instalar las dependencias, y luego las migraciones con "php artisan migrate". También ejecutamos "php artisan key:generate". Parados en el entorno local, raíz del proyecto, debemos ejecutar "npm install" y "npm run build", y con esto, ya nos dejará el proyecto corriendo en "http://localhost:8002/". El puerto obviamente se puede cambiar en el archivo docker-compose.yml, antes de levantar los contenedores.
 Recordar también agregar un archivo .env, donde poner estos datos para la DB:
 
 DB_CONNECTION=mysql
