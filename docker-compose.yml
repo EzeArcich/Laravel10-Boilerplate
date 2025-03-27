@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     working_dir: /var/www
     volumes:
-     - /var/www/html/laravel12:/var/www
+     - /var/www/html/Laravel10-Boilerplate:/var/www
     ports:
       - "8002:8000"
     depends_on:
